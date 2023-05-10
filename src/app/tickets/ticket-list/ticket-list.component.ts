@@ -21,6 +21,10 @@ export class TicketListComponent implements OnInit {
   ticketHasBeenSelected(hasBeenSelected: boolean) {
     console.log('event received from child:', hasBeenSelected);
   }
+  
+  displayTicketArchived(hasBeenArchived: boolean){
+    console.log('event received from child:', hasBeenArchived);
+  }
 
   deleteTicket(ticket: Ticket){
     this.ticketService.deleteTicket(ticket)
